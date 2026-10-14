@@ -1,0 +1,21 @@
+# Merge this into ~/.config/herdr/config.toml. Do NOT replace the whole file: it holds
+# the user's own theme and settings. See INSTALL_PROMPT.md for the merge rules.
+
+[keys]
+# ctrl+b opens a which-key menu (scripts/whichkey.py) listing the essential
+# actions. Its keys match herdr's default prefix keys, so ctrl+b v still splits
+# right and ctrl+b c still opens a tab. ctrl+b ctrl+b sends a literal ctrl+b.
+#
+# herdr's own prefix moves to ctrl+alt+b, with every default prefix+... binding
+# unchanged. Use it for herdr's built-in screens, which the menu can't open:
+# goto (g), workspaces (w), keybinding help (?), settings (s), copy mode ([),
+# sidebar (b), detach (q).
+prefix = "ctrl+alt+b"
+
+[[keys.command]]
+key = "ctrl+b"
+type = "popup"
+command = "exec \"$HOME/.config/herdr/scripts/whichkey.py\""
+description = "which-key menu"
+width = "90%"
+height = 17
