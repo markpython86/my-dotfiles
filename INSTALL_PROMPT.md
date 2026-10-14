@@ -36,6 +36,10 @@ time of writing describe 0.9.5.
 
 ## Rules for you, the agent
 
+- Before changing anything, tell the user, in your own words, that this is installed at their own risk. It edits
+  their herdr config, changes their keybindings, and adds a script that herdr runs with their permissions. The
+  project is provided as is, with no warranty (see the README's Disclaimer and the LICENSE). Offer to show them
+  `herdr/scripts/whichkey.py` and `herdr/config.snippet.toml` first, and continue only after they agree.
 - Ask before writing to the user's herdr config. Back it up first.
 - Never overwrite `config.toml` or an existing script without showing a diff and asking.
 - Never copy, read aloud, or upload anything else from `~/.config/herdr/`. It holds session snapshots,

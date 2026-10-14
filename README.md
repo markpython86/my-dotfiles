@@ -38,6 +38,17 @@ rather keep `ctrl+b` as your prefix, `INSTALL_PROMPT.md` explains how to bind th
 - Optional: a [Nerd Font](https://www.nerdfonts.com) in your terminal for the icons. Set `HERDR_WHICHKEY_ICONS=0`
   to turn them off.
 
+## Disclaimer
+
+**Install this at your own risk.** It edits your herdr `config.toml`, changes your keybindings (including moving
+herdr's prefix to `ctrl+alt+b`), and adds a script that herdr runs with your user's permissions. The popup's keys
+can close panes, tabs and workspaces. This project is provided "as is", without warranty of any kind, as stated in
+the [LICENSE](LICENSE). The author is not responsible for lost work, a broken configuration, or any other damage.
+
+Before you install: read `herdr/scripts/whichkey.py` and `herdr/config.snippet.toml`, and keep a backup of your
+config (the install steps make one). If you use an AI agent to install it, review what it proposes before you
+approve changes.
+
 ## Install, with an AI coding agent (recommended)
 
 1. Clone this repo and open it in your coding agent:
@@ -90,3 +101,8 @@ Restore the `config.toml.bak-...` file that was created during install, then run
 | `herdr/scripts/whichkey.py` | The popup menu script. Each key runs a herdr CLI command. |
 | `herdr/config.snippet.toml` | The `ctrl+b` popup binding and the prefix change, to merge into your `config.toml`. |
 | `INSTALL_PROMPT.md` | Step-by-step instructions written for an AI agent, including customization and troubleshooting. |
+| `LICENSE` | MIT license. |
+
+## License
+
+MIT. See [LICENSE](LICENSE).
