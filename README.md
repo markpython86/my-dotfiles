@@ -31,6 +31,12 @@ prefix to `ctrl+alt+b`**. Every default `prefix+...` binding keeps working under
 screens the popup can't open (go to agent, workspaces, settings, copy mode, detach, and so on). If you would
 rather keep `ctrl+b` as your prefix, `INSTALL_PROMPT.md` explains how to bind the popup to a different key.
 
+## Neovim
+
+`nvim/` exports the author's LazyVim-based Neovim setup with `ai-help` as the headline feature. Press `<leader>ai`
+to ask “how do I … in neovim?” and get keystrokes for this config. See [`nvim/README.md`](nvim/README.md) for the
+minimal ai-help install, full setup notes, backend configuration, and uninstall steps.
+
 ## Requirements
 
 - herdr (developed on 0.9.3) and `python3` on your `PATH`. Python 3.11+ is recommended so the script can read your
@@ -100,6 +106,7 @@ Restore the `config.toml.bak-...` file that was created during install, then run
 |---|---|
 | `herdr/scripts/whichkey.py` | The popup menu script. Each key runs a herdr CLI command. |
 | `herdr/config.snippet.toml` | The `ctrl+b` popup binding and the prefix change, to merge into your `config.toml`. |
+| `nvim/` | LazyVim-based Neovim config export with the `ai-help` in-session shortcut helper. |
 | `INSTALL_PROMPT.md` | Step-by-step instructions written for an AI agent, including customization and troubleshooting. |
 | `LICENSE` | MIT license. |
 
