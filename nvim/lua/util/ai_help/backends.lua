@@ -1,16 +1,17 @@
 local M = {}
 
+-- Any OpenAI-compatible provider works: set endpoint, model, and api_key_env.
 M.defaults = {
-  backend = "pi",
+  backend = "openai",
   timeout = 30000,
   pi = {
     cmd = "pi",
     model = "vercel-ai-gateway/google/gemini-3.5-flash-lite",
   },
   openai = {
-    endpoint = "https://api.deepseek.com",
-    model = "deepseek-chat",
-    api_key_env = "DEEPSEEK_API_KEY",
+    endpoint = "https://ai-gateway.vercel.sh/v1",
+    model = "google/gemini-2.5-flash-lite",
+    api_key_env = "AI_GATEWAY_API_KEY",
   },
 }
 
