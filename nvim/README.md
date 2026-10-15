@@ -54,7 +54,7 @@ If your config does not already label `<leader>a`, keep the `which-key.nvim` spe
 
 The rest of `nvim/` is the supporting LazyVim-based setup exported with ai-help: `init.lua`, Lazy setup, options, keymaps, autocmds, utility helpers, and the UI/style plugin overrides. It was exported from a config running Neovim 0.12.2.
 
-Third-party cursor-style AI assistants were intentionally left out. This repo does not include model-pickers, keychain lookups, generated ai-help context, lockfiles, local language-server settings, or query overrides.
+Third-party AI assistants and the lockfile were intentionally left out.
 
 ## Uninstall
 
